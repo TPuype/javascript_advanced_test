@@ -19,14 +19,14 @@ async function getfilmsJSON() {
     return filmList;
 }
 
-// Vanaf dat de JSON geladen is voer dan de volgende functies uit
+// Vanaf dat de JSON geladen is, voer dan de volgende functies uit
 getfilmsJSON().then(filmList => {
     fillLibrary(filmList);
     indexCheck();
     show(index);
 });
 
-// functie om door de JSON file te itereren en de JSON object om te zetten in Film objecten
+// functie om door de JSON file te itereren en de JSON objecten om te zetten in Film objecten
 function fillLibrary(data) {
     for (let i = 0; i < data.length; i++) {
 
@@ -113,7 +113,7 @@ document.getElementById("next").addEventListener("click", () => {
     indexCheck();
 })
 
-//functie die controleerd of de gebruiker de eerste of de latste film bekijkt.
+//functie die controleerd of de gebruiker de eerste of de laatste film bekijkt.
 function indexCheck() {
     if (index === 0) {
         document.getElementById("previous").disabled = true;
