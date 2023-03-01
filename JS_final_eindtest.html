@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Eindtest Javascript finaliteit</title>
+    <link rel="stylesheet" href="movies.css">
+    <script src="Scripts/Film.js"></script>
+    <script src="Scripts/Library.js"></script>
+    <script src="Scripts/index.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Eindtest Javascript finaliteit</h1>
+    <h2>Ladies at the Movies, Men at Home </h2>
+    <div class="film">
+        <!-- start film container -->
+        <img src="" alt="titel" id="cover"/> <!-- foto-->
+        <div class="kol">
+            <h2 id="title"><!-- titel-->
+                <small>(<!-- filmNr--> )</small>
+            </h2>
+            <p id="description"><!-- beschrijving --> </p>
+            <dl>
+                <dt >regisseur:</dt>
+                <dd id="director"><!-- regisseurnaam--> </dd>
+                <dt >genres:</dt>
+                <dd id="genres"><!-- genre, genre, genre,... --> </dd>
+                <dt >duurtijd:</dt>
+                <dd id="length"><!-- duurtijd--> </dd>
+                <dt >release:</dt>
+                <dd id="releaseDate"><!-- release datum--> </dd>
+                <dt >rating:</dt>
+                <dd id="rating"><!-- rating--> </dd>
+                <dt >cast:</dt>
+                <dd id="cast">
+                    <!--<ul>-->
+                        <!--<li>acteurnaam</li>-->
+                        <!--<li>etc</li>-->
+                    <!--</ul>-->
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- einde film container -->
+    <!-- navigatie -->
+    <div class="navigatie">
+        <button id="previous">vorige</button> <button id="next">volgende</button>
+    </div>
+
+</div>
+</body>
+</html>
