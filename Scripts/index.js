@@ -6,7 +6,7 @@ let library = new Library();
 // index van de navigatie 
 let index = 0;
 
-// asynchrone functie die de JSON laad en de lijst van films oplevert
+// asynchrone functie die de JSON laadt en de lijst van films oplevert
 async function getfilmsJSON() {
     const response = await fetch('Data/movies_nows.json')
 
